@@ -14,7 +14,11 @@ export class AppComponent {
 	constructor(private usersService: UsersService) {}
 	
 	ngOnInit() {
-		this.users = this.usersService.users
+		//this.users = this.usersService.users
+		this.usersService.getUsers().subscribe(users => {
+			this.users = users;
+			console.log(users);
+		});
 	}
 
 }
