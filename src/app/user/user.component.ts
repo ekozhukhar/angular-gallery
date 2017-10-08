@@ -12,7 +12,6 @@ export class UserComponent {
 	
 	onClick() {
 		this.isMarked = true;
-		//console.log('Clicked');
 	}
 	
 }
