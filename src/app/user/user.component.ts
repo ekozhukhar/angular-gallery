@@ -8,5 +8,11 @@ import { Component, Input } from '@angular/core';
 export class UserComponent {
 	
 	@Input() user;
+	isMarked = false;
+	
+	onClick() {
+		this.isMarked = true;
+		//console.log('Clicked');
+	}
 	
 }
